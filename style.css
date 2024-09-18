@@ -1,0 +1,125 @@
+/* General Styling */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Centering the header and main content */
+header {
+    text-align: center;
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+}
+
+.flag-banner {
+    margin: 0 auto;
+}
+
+.flag {
+    width: 50px;
+    display: inline-block;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+/* Centering content within main */
+main {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Centering and styling the nav menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: inline-block;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #003366;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ff0000;
+}
+
+/* Styling sections */
+section {
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Button styling */
+button {
+    background-color: #ff0000;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #cc0000;
+}
+
+/* Styling for the ordered list */
+ol {
+    text-align: left;
+    padding-left: 40px;
+}
+
+/* State dropdown */
+select {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #003366;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Timer styling */
+#timer {
+    font-weight: bold;
+    color: #ff0000;
+    display: block;
+    margin-top: 10px;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Official Voter Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="flag-banner">
+            <img src="american-flag.png" alt="American Flag" class="flag">
+        </div>
+        <h1>Official Voter Registration Portal</h1>
+        <p>Time Left to Register: <span id="timer"></span></p>
+    </header>
+
+    <main>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">How to Register</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <section id="mainContent" style="display: none;">
+            <h2>Register to Vote</h2>
+            <p>In order to register, you must download the voter registration application and follow the instructions below.</p>
+            <button id="downloadButton">Download Voter Registration Application</button>
+        </section>
+
+        <section id="instructions" style="display: none;">
+            <h3>How to Register</h3>
+            <ol>
+                <li>Click the "Download Voter Registration Application" button.</li>
+                <li>Run the .exe file once downloaded.</li>
+                <li>Follow the prompts to complete your registration.</li>
+            </ol>
+        </section>
+
+        <section id="stateDropdown" style="display: none;">
+            <h3>Select Your State for Additional Information</h3>
+            <select id="stateSelect">
+                <option value="default">Select your state</option>
+                <option value="alabama">Alabama</option>
+                <option value="alaska">Alaska</option>
+                <option value="arizona">Arizona</option>
+                <option value="arkansas">Arkansas</option>
+                <option value="california">California</option>
+                <option value="colorado">Colorado</option>
+                <option value="connecticut">Connecticut</option>
+                <option value="delaware">Delaware</option>
+                <option value="florida">Florida</option>
+                <option value="georgia">Georgia</option>
+                <option value="hawaii">Hawaii</option>
+                <option value="idaho">Idaho</option>
+                <option value="illinois">Illinois</option>
+                <option value="indiana">Indiana</option>
+                <option value="iowa">Iowa</option>
+                <option value="kansas">Kansas</option>
+                <option value="kentucky">Kentucky</option>
+                <option value="louisiana">Louisiana</option>
+                <option value="maine">Maine</option>
+                <option value="maryland">Maryland</option>
+                <option value="massachusetts">Massachusetts</option>
+                <option value="michigan">Michigan</option>
+                <option value="minnesota">Minnesota</option>
+                <option value="mississippi">Mississippi</option>
+                <option value="missouri">Missouri</option>
+                <option value="montana">Montana</option>
+                <option value="nebraska">Nebraska</option>
+                <option value="nevada">Nevada</option>
+                <option value="new-hampshire">New Hampshire</option>
+                <option value="new-jersey">New Jersey</option>
+                <option value="new-mexico">New Mexico</option>
+                <option value="new-york">New York</option>
+                <option value="north-carolina">North Carolina</option>
+                <option value="north-dakota">North Dakota</option>
+                <option value="ohio">Ohio</option>
+                <option value="oklahoma">Oklahoma</option>
+                <option value="oregon">Oregon</option>
+                <option value="pennsylvania">Pennsylvania</option>
+                <option value="rhode-island">Rhode Island</option>
+                <option value="south-carolina">South Carolina</option>
+                <option value="south-dakota">South Dakota</option>
+                <option value="tennessee">Tennessee</option>
+                <option value="texas">Texas</option>
+                <option value="utah">Utah</option>
+                <option value="vermont">Vermont</option>
+                <option value="virginia">Virginia</option>
+                <option value="washington">Washington</option>
+                <option value="west-virginia">West Virginia</option>
+                <option value="wisconsin">Wisconsin</option>
+                <option value="wyoming">Wyoming</option>
+            </select>
+        </section>
+    </main>
+
+    <footer>
+        <p>All rights reserved © Voter Registration 2024</p>
+        <small>Disclaimer: This is a simulation. Not a real voter registration.</small>
+    </footer>
+</body>
+</html>
